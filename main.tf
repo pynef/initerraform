@@ -9,7 +9,8 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1"
-  profile = "rimac_inno"
+  access_key = var.id
+  secret_key = var.key
 }
 
 data "aws_ami" "ubuntu" {
