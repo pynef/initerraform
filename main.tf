@@ -13,7 +13,7 @@ provider "aws" {
   secret_key = var.secret_key
 }
 
-data "aws_amis" "ubuntu" {
+data "aws_ami" "ubuntu" {
   most_recent = true
 
   filter {
